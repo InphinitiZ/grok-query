@@ -183,6 +183,7 @@ openclaw browser snapshot
 | Page not loading | `openclaw browser navigate https://grok.com` or re-open |
 | Response incomplete | Increase wait time, take multiple snapshots to confirm |
 | Clicked wrong element | Re-`snapshot` to get fresh refs |
+| "Unknown ref" error | The ref is stale — page has changed since last snapshot. Run a new `snapshot` and use refs from that result. Never reuse refs from a previous snapshot. |
 
 ## Common Use Cases
 
