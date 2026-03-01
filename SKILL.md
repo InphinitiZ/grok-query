@@ -147,6 +147,13 @@ Repeat the wait-then-snapshot cycle until you see completion indicators:
 - English: "Stop response" / "Regenerate"
 - Chinese: "停止模型响应" / "Regenerate"
 
+### Handling Image Responses
+
+If the snapshot contains `img` elements in the response area (e.g. from Grok's Imagine feature), extract the image URL:
+
+```bash
+openclaw browser evaluate --fn "(el) => el.src" --ref <img-ref>
+```
 
 ## Multi-turn Conversation
 
