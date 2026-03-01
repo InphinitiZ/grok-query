@@ -139,9 +139,10 @@ openclaw browser snapshot
 # If "Stop response" button is still visible → still generating, repeat from step 1
 ```
 
-Repeat the wait-then-snapshot cycle until you see completion indicators:
+Repeat the wait-then-snapshot cycle until you see completion indicators or **5 minutes** have elapsed:
 - **Done**: "Regenerate", "Read aloud", "Copy" buttons appear
 - **Still generating**: "Stop response" button is present, or content is still growing
+- **Timeout**: If 5 minutes pass with no completion, stop polling and inform the user that the Grok response timed out
 
 **Note on localized UI**: Button text depends on Grok UI language:
 - English: "Stop response" / "Regenerate"
