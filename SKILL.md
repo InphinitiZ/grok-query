@@ -1,5 +1,5 @@
 ---
-name: grok
+name: grok-query
 description: "Query Grok AI (grok.com) for real-time information via browser automation. Requires: OpenClaw browser enabled, user pre-logged-in to grok.com, and a Grok account (free tier works)."
 license: MIT
 metadata:

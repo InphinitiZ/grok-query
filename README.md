@@ -1,4 +1,4 @@
-# grok
+# grok-query
 
 一个 [OpenClaw](https://openclaw.ai) skill，让 AI 助手能够通过浏览器自动化访问 [Grok AI](https://grok.com) 获取实时信息。
 
