@@ -191,6 +191,15 @@ openclaw browser snapshot
 | Response incomplete | Increase wait time, take multiple snapshots to confirm |
 | Clicked wrong element | Re-`snapshot` to get fresh refs |
 | "Unknown ref" error | The ref is stale — page has changed since last snapshot. Run a new `snapshot` and use refs from that result. Never reuse refs from a previous snapshot. |
+| Free tier quota exceeded | Inform user their Grok quota is used up; wait for reset or upgrade to SuperGrok |
+| CAPTCHA / human verification | Cannot be automated; ask user to complete it manually, then retry |
+| "Something went wrong" mid-response | Re-send the question or reload the page and try again |
+| "Continue generating" button | Click the button to resume generation, then continue polling |
+| Session expired / redirected to login | Ask user to re-login in the browser, then reload grok.com |
+| Multiple grok.com tabs open | Use `tabs` to list all, pick the correct one by URL or title |
+| DeepSearch UI differs | Completion indicator may differ; poll snapshot and look for source count or result summary instead of "Regenerate" |
+| Accidentally opened model selector | `press Escape` to close the dropdown, then re-`snapshot` |
+| Tab closed or browser killed mid-response | Start over: `openclaw browser open https://grok.com` and re-send the question |
 
 ## Common Use Cases
 
