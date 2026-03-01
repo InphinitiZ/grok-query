@@ -27,7 +27,7 @@ The `metadata.openclaw` block can include `emoji`, `requires.bins`, and `install
 
 Copy to OpenClaw workspace for local use:
 ```bash
-cp SKILL.md ~/.openclaw/workspace/skills/grok/SKILL.md
+cp SKILL.md ~/.openclaw/workspace/skills/grok-query/SKILL.md
 ```
 
 ## Linting

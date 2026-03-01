@@ -6,8 +6,9 @@
 
 - 打开 grok.com 或复用已有标签页
 - 自动输入问题并点击发送
-- 轮询检测回答完成（覆盖思考阶段 + 输出阶段）
+- 轮询检测回答完成（覆盖思考阶段 + 输出阶段，5 分钟总超时）
 - 支持多轮对话
+- 图片回答自动提取 URL（Imagine 模式）
 - 自动处理弹窗/横幅（SuperGrok 升级提示、登录弹窗等）
 
 ## 前置要求
@@ -21,8 +22,8 @@
 将 `SKILL.md` 复制到 OpenClaw skills 目录：
 
 ```bash
-mkdir -p ~/.openclaw/workspace/skills/grok
-cp SKILL.md ~/.openclaw/workspace/skills/grok/SKILL.md
+mkdir -p ~/.openclaw/workspace/skills/grok-query
+cp SKILL.md ~/.openclaw/workspace/skills/grok-query/SKILL.md
 ```
 
 ## 工作原理
